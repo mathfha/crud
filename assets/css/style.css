@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+#container {
+    width: 95%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: linear-gradient(135deg, #4CAF50, #2e7d32);
+    color: white;
+}
+#logo-perpustakaan {
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    border: 2px solid rgba(255,255,255,0.7);
+}
+.nama-alamat-perpustakaan {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#header2 {
+    width: 100%;
+    background: linear-gradient(135deg, #2e7d32, #4CAF50);
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+#nama-user {
+    margin: 0;
+    font-style: italic;
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+#sidebar {
+    flex: 1 1 220px;
+    background-color: #263238;
+    padding: 15px;
+    color: #eee;
+}
+#sidebar ul {
+    list-style: none;
+}
+#sidebar a {
+    display: block;
+    padding: 12px 15px;
+    color: #eee;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    transition: all 0.3s ease;
+}
+#sidebar a:hover {
+    background-color: #4CAF50;
+    transform: translateX(5px);
+}
+.label-navigasi {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #aaa;
+    margin: 12px 0 6px;
+}
+
+#content {
+    flex: 3;
+    padding: 25px;
+    background: #fafafa;
+    border-left: 1px solid #eee;
+}
+
+#label-page,
+#content h3:first-child,
+#content h2:first-child {
+    background-color: #f9f9f9;
+    border-left: 5px solid #4CAF50;
+    padding: 10px 15px;
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    border-radius: 6px;
+}
+
+.tombol {
+    border-radius: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    background: linear-gradient(135deg, #4CAF50, #2e7d32);
+    padding: 8px 16px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.tombol:hover {
+    background: linear-gradient(135deg, #45a049, #1b5e20);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+#tabel-tampil {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+#tabel-tampil th {
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+#tabel-tampil td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+#tabel-tampil tr:nth-child(even) {
+    background: #f9f9f9;
+}
+#tabel-tampil tr:hover {
+    background: #e8f5e9;
+    transition: background 0.2s;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 8px;
+}
+.pagination a {
+    color: #333;
+    padding: 8px 14px;
+    text-decoration: none;
+    border-radius: 6px;
+    background: #eee;
+    transition: all 0.3s ease;
+}
+.pagination a.active {
+    background: #4CAF50;
+    color: #fff;
+    font-weight: 600;
+}
+.pagination a:hover:not(.active) {
+    background: #ddd;
+}
+
+#footer {
+    padding: 12px;
+    text-align: center;
+    background: #2e7d32;
+    color: #fff;
+    font-size: 13px;
+}
