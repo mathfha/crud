@@ -1,0 +1,9 @@
+CREATE TABLE admin (
+  id_admin int(5) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  nm_admin varchar(35) NOT NULL,
+  username varchar(35) NOT NULL,
+  password varchar(35) NOT NULL
+);
+
+INSERT INTO admin (id_admin, nm_admin, username, password) VALUES
+(1, 'Jack', 'admin', '1234');
