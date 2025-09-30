@@ -2,7 +2,7 @@
 $server = "localhost";
 $user = "adit";
 $password = "passwordku";
-$nama_database = "db_perpus";
+$nama_database = "dbpus";
 
 $db = mysqli_connect($server, $user, $password, $nama_database);
 
