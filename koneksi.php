@@ -1,7 +1,7 @@
 <?php
 $server = "localhost";
-$user = "adit";
-$password = "passwordku";
+$user = "";
+$password = "";
 $nama_database = "dbpus";
 
 $db = mysqli_connect($server, $user, $password, $nama_database);
